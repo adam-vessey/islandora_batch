@@ -123,7 +123,7 @@ abstract class IslandoraBatchPreprocessor {
     }
 
     // TODO: Implement some form of caching, so we can get multiple at a time.
-    return $this->connection->repository->api->m->getNextPid($namespace);
+    return $this->connection->repository->getNextIdentifier($namespace);
   }
 
 
